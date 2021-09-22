@@ -10,9 +10,9 @@ Outlook = win32.Dispatch('outlook.application')
 
 email = Outlook.CreateItem(0)
 
-# COnfiguração do SEU email
+# COnfiguração do e-mail de destino
 # Destino
-email.To = "Felipe-oliver2015@outlook.com"
+email.To = "emaildedestino@outlook.com"
 # Assunto
 email.Subject = " Email automatico"
 # Corpo do Email
@@ -21,6 +21,6 @@ email.HTMLBody = '''
 <p> Att.: Seu gerente </p>
 '''
 
-# Rementente
+# Seu e-mail 
 email.Send = ""
 print('E-mail enviado')
